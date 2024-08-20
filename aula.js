@@ -28,7 +28,7 @@ console.log("Resto da divisão de 10 por 5: ", resto)
 // Incremento
 let inc = 0
 inc ++
-console.log("Inremento de 0 + 1: ", inc)
+console.log("Incremento de 0 + 1: ", inc)
 
 // Decremento
 let dec = 1
@@ -37,44 +37,156 @@ console.log("Decremento de 0 - 1: ", dec)
 
 
 // Exercicio 1
-let number1 = 5
-let number2 = 7
-let number3 = 10
-let atm = number1 + number2 + number3 / 3
-console.log("Aritmética de 5, 7 e 10: ", atm)
+function aritmetica (number1, number2, number3) {
+  let atm = number1 + number2 + number3 / 3
+  console.log("Aritmética de 5, 7 e 10: ", atm)
+}
+aritmetica(5, 7, 10)
 
 // Exercicio 2
-let b = 10
-let h = 25
-let area = b * h
-console.log("A área do retângulo é: ", area)
+function retangulo (b, h) {
+  let area = b * h
+  console.log("A área do retângulo é: ", area)
+}
+retangulo(10, 25)
 
 // Exercicio 3
-let number = 10
-let incr = number++
-let decr = number--
-console.log("O incremento do número 10 é: ", incr, "e o decremento é: ", decr)
+function incrementoDecremento (number) {
+  let incr = number++
+  let decr = number--
+  console.log("O incremento do número 10 é: ", incr, "e o decremento é: ", decr)
+}
+incrementoDecremento(10)
 
 // Exercicio 4
-let n1 = 8
-let n2 = 16
-let result = n1 % n2
-console.log("Resto da divisão de 8 por 16: ", result)
+function restoDivisao (n1, n2) {
+  let result = n1 % n2
+  console.log("Resto da divisão de 8 por 16: ", result)
+}
+restoDivisao(8, 16)
 
 // Exercicio 5
-let f = 32
-let c = (f - 32) * (5/9)
-console.log("A temperatura em Celsius para Fahrenheit fica: ", c)
+function temperatura (f) {
+  let c = (f - 32) * (5/9)
+  console.log("A temperatura em Celsius para Fahrenheit fica: ", c)
+}
+temperatura(32)
 
 // Exercicio 6
-let numero = 27
-let dobro = numero * 2
-let metade = numero / 2
-console.log("Dobro de 27: ", dobro, "Metade de 27: ", metade)
+function dobroMetade (number) {
+  let dobro = number * 2
+  let metade = number / 2
+  console.log("Dobro de 27: ", dobro, "Metade de 27: ", metade)
+}
+dobroMetade(27)
 
 // Exercicio 7
-let nu1 = 9
-let nu2 = 3
-let exp = nu1**nu2
+function elevado (number1, number2) {
+  let exp = number1**number2
+  console.log("52 elevado a 94 é igual a: ", exp)
+}
+elevado(9, 3)
 
-console.log("52 elevado a 94 é igual a: ", exp)
+// Exercicio 8
+function negativoOuPositivo (number) {
+  if (number >= 1) {
+    console.log('Esse número é positivo.')
+  } else if (number < 0) {
+    console.log('Esse número é negativo.')
+  } else {
+    console.log('O número é zero.')
+  }
+}
+negativoOuPositivo(5)
+
+// Exercicio 9
+function parOuImpar (number) {
+  if (number %2 == 0) {
+    console.log('Esse número é par.')
+  }
+  else {
+    console.log('Esse número é ímpar.')
+  }
+}
+parOuImpar(24)
+
+// Exercicio 10
+function classIdade (number) {
+  if (number <= 12) {
+    console.log('É uma criança.')
+  }
+  else if (number <= 17) {
+    console.log('É um adolescente.')
+  }
+  else if (number <= 64) {
+    console.log('É um adulto.')
+  }
+  else {
+    console.log('É um idoso.')
+  }
+}
+classIdade(65)
+
+// Exercicio 11
+function classNota (number) {
+  if (number <= 20) {
+    console.log('Nota F')
+  }
+  else if (number <= 40) {
+    console.log('Nota D')
+  }
+  else if (number <= 60) {
+    console.log('Nota C')
+  }
+  else if (number <= 80) {
+    console.log('Nota B')
+  }
+  else {
+    console.log('Nota A')
+  }
+}
+classNota(85)
+
+// Exercicio 12
+function diaDaSemana (number) {
+  if (number == 1) {
+    console.log('Segunda')
+  }
+  else if (number == 2) {
+    console.log('Terça')
+  }
+  else if (number == 3) {
+    console.log('Quarta')
+  }
+  else if (number == 4) {
+    console.log('Quinta')
+  }
+  else if (number == 5) {
+    console.log('Sexta')
+  }
+  else if (number == 6) {
+    console.log('Sábado')
+  }
+  else {
+    console.log('Domingo')
+  }
+}
+diaDaSemana(5)
+
+// Exercicio 13
+function bonusVendedor (faturamento) {
+  let bonus = 0;
+  if (faturamento < 1000) {
+    bonus = faturamento * 0;
+    console.log('Bônus igual a: ', bonus)
+  }
+  else if (faturamento >= 1000 && faturamento <= 5000) {
+    bonus = faturamento * 0.05
+    console.log('Bônus igual a: ', bonus)
+  }
+  else {
+    bonus = faturamento * 0.1
+    console.log('Bônus igual a: ', bonus)
+  }
+}
+bonusVendedor(2000)
