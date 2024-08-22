@@ -190,3 +190,40 @@ function bonusVendedor (faturamento) {
   }
 }
 bonusVendedor(2000)
+
+// Arrays
+let frutas = ["Maçã", "Banana", "Laranja"]
+console.log(frutas[0])
+
+// Push
+frutas.push("Manga")
+console.log(frutas)
+
+// Pop
+frutas.pop()
+console.log(frutas)
+
+// Shift
+frutas.shift()
+console.log(frutas)
+
+// Unshift
+frutas.unshift("Morango")
+console.log(frutas)
+
+// Length
+console.log(frutas.length)
+
+// Exercicio 14
+for(i = 10; i >= 1; i--) {
+    console.log(i)
+}
+console.log("Feliz ano novo!")
+
+// Exercicio 15
+for(e = 1; e <= 20; e++) {
+    if (e %2 == 0) {
+        let number = e + e
+        console.log(e, "+", e, "=", number)
+    }
+}
