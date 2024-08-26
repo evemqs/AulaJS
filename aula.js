@@ -191,6 +191,67 @@ function bonusVendedor (faturamento) {
 }
 bonusVendedor(2000)
 
+// Aula 3
+
+for (i = 10; i <= 20; i++) {
+  console.log("Número " + i)
+}
+
+let e = 0;
+while (e <= 5) {
+  console.log("O número é " + e);
+  e++
+}
+
+let a = 0;
+do {
+  console.log("The number is " + a)
+  a++;
+}
+while (a <= 5);
+
+let palavras = ["Figma", "Palavra", "JavaScript"]
+for (let o of palavras) {
+  console.log(o)
+}
+
+for (u = 1; u <= 10; u++) {
+  let soma = u + 2;
+  let resSoma = u+' + 2 = ' + soma;
+  console.log(resSoma)
+}
+
+for (u = 1; u <= 10; u++) {
+  let multi = u * 2;
+  let resMulti = u+' * 2 = ' + multi;
+  console.log(resMulti)
+}
+
+for (k = 10; k < 20; k++) {
+  if(k == 15) {
+    console.log("Cabo")
+    break;
+  }
+  console.log(k)
+}
+
+let txt = "";
+for (r = 0; r < 10; r++) {
+  if(r === 3) {
+    continue;
+  }
+  txt = "O número é " + r;
+  console.log(txt)
+}
+
+for (p = 1; p <= 15; p++) {
+  if(p % 2 == 0) {
+    console.log("O número é par: ", p)
+  } else {
+    console.log("O número é impar: ", p)
+  }
+}
+
 // Arrays
 let frutas = ["Maçã", "Banana", "Laranja"]
 console.log(frutas[0])
@@ -224,6 +285,170 @@ console.log("Feliz ano novo!")
 for(e = 1; e <= 20; e++) {
     if (e %2 == 0) {
         let number = e + e
-        console.log(e, "+", e, "=", number)
+        console.log(`${e} + ${e} = ${number}`)
     }
 }
+
+// Exercicio 16
+function tabuada(numero) {
+  console.log(`Tabuada de ${numero}:`);
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+  }
+}
+tabuada(7);
+
+// Exercicio 17
+function contarVogais(str) {
+  str = str.toLowerCase();
+  const vogais = "aeiou";
+  let contador = 0;
+  for (let char of str) {
+    if (vogais.includes(char)) {
+      contador++;
+    }
+  }
+  return contador;
+}
+const minhaString = "Contar o número de vogais";
+const numeroDeVogais = contarVogais(minhaString);
+console.log(`O número de vogais na string é: ${numeroDeVogais}`);
+
+// Exercicio 18
+function exibirImpares() {
+  let numero = 1
+  while (numero <= 20) {
+    console.log(numero)
+    numero += 2
+  }
+}
+exibirImpares();
+
+// Exercicio 19
+function somarDigitos(numero) {
+  const strNumero = numero.toString()
+  let soma = 0
+  for (let char of strNumero) {
+    soma += parseInt(char, 10)
+  }
+  return soma;
+}
+const numero = 1234;
+const resultado = somarDigitos(numero);
+console.log(`A soma dos dígitos de ${numero} é: ${resultado}`);
+
+// Exercicio 20
+let objeto = {
+  nome: "João",
+  idade: 30,
+  cidade: "São Paulo",
+}
+console.log(objeto)
+
+// Functions
+
+function adivinharNumero (n) {
+  let text = ``
+  if (n == 10 || n == 15 || n == 20) {
+    console.log(`Seu número foi: ${n}`)
+  } else {
+    text = `Seu número não foi sorteado`
+  }
+  return text
+}
+adivinharNumero(15)
+
+
+
+function getSizes (alt, lar, com) {
+  let area = alt * lar
+  let volume = alt * lar * com
+  let sizes = {area, volume, alt, lar, com}
+  return sizes
+}
+console.log(getSizes(5, 6 ,7))
+
+
+function somando (numero) {
+  for (u = 1; u <= 10; u++) {
+    let soma = u + numero;
+    console.log(`${u} + ${numero} = ${soma}`)
+  }
+}
+somando(3)
+
+
+function multiplicando (numero) {
+  for (u = 1; u <= 10; u++) {
+    let multi = u * numero;
+    console.log(`${u} x ${numero} = ${multi}`)
+  }
+}
+multiplicando(3)
+
+
+function pula(n) {
+  let txt = "";
+  for (r = 0; r <= 10; r++) {
+    if(r === n) {
+      continue;
+    }
+    txt = "O número é " + r;
+    console.log(txt)
+  }
+}
+pula(5)
+
+
+function calcularSoma(numeros) {
+  let soma = 0;
+
+  for (let n of numeros) {
+    soma += n;
+  }
+  console.log(`A soma final é igual a: ${soma}`);
+}
+let numeros = [1, 2, 3, 4];
+calcularSoma(numeros);
+
+
+// Aula 4
+
+let pessoa = {
+  nome: "Carlos",
+  idade: 30,
+  profissao: "Desenvolvedor",
+  saudacao: function() {
+    console.log("Olá, meu nome é: " + this.nome)
+  }
+}
+
+let outraPessoa = {
+  nome: "Ana",
+  email: "anaoliveira@gmail.com",
+  idade: 25,
+  saudacao: pessoa.saudacao
+}
+outraPessoa.saudacao()
+
+console.log(pessoa)
+console.log(outraPessoa)
+
+// Exercicio 21
+let nomes = ["Numanice", "Laryssa", "Herbert", "Normani"]
+nomes.push("Everlyn")
+nomes.shift()
+console.log("Tamanho do array:", nomes.length)
+nomes = nomes.map(nome => nome.toUpperCase())
+console.log("Nomes finais:", nomes)
+
+// Exercicio 22
+let carro = {
+  marca: 'Toyota',
+  modelo: 'Corolla',
+  ano: 2020
+}
+carro.cor = 'Azul';
+delete carro.ano;
+console.log('Marca:', carro.marca);
+console.log('Modelo:', carro.modelo);
