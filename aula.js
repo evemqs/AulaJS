@@ -359,7 +359,6 @@ function adivinharNumero (n) {
 adivinharNumero(15)
 
 
-
 function getSizes (alt, lar, com) {
   let area = alt * lar
   let volume = alt * lar * com
@@ -452,3 +451,86 @@ carro.cor = 'Azul';
 delete carro.ano;
 console.log('Marca:', carro.marca);
 console.log('Modelo:', carro.modelo);
+
+// Exercicio 23
+// Função calculadora básica
+function userNumber() {
+  const num1 = parseFloat(prompt("Digite o primeiro número: "));
+  const num2 = parseFloat(prompt("Digite o segundo número: "));
+  const operation = prompt("Escolha a operação desejada (+, -, /, *): ");
+
+  function calcBasic(num1, num2, operation) {
+    let res
+    if (operation === "+") {
+      res = num1 + num2;
+      console.log(`${num1} + ${num2} = ${res}`);
+    }
+    else if (operation === "-") {
+      res = num1 - num2;
+      console.log(`${num1} - ${num2} = ${res}`);
+    }
+    else if (operation === "*") {
+      res = num1 * num2;
+      console.log(`${num1} * ${num2} = ${res}`);
+    }
+    else {
+      res = num1 / num2;
+      console.log(`${num1} / ${num2} = ${res}`);
+    }
+  }
+  calcBasic(num1, num2, operation);
+}
+userNumber();
+
+// Exercicio 24
+// Número primo
+const num = parseInt(prompt("Digite um número: "))
+function primo(num) {
+  if (num <= 1) {
+    console.log("Não é primo");
+    return;
+  }
+  if (num === 2) {
+    console.log("É primo");
+    return;
+  }
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      console.log("Não é primo");
+      return;
+    }
+  }
+  console.log("É primo");
+}
+primo(num);
+
+// Exercicio 25
+// Caracteres especiais
+function caracterEspecial(texto) {
+  texto = prompt("Digite uma string: ");
+  const cctr = "{[@#$%&]}";
+  let contador = 0;
+  for (let char of texto) {
+    if (cctr.includes(char)) {
+      contador++;
+    }
+  }
+  return contador;
+}
+const meuTexto = "Contar o número de caracteres";
+const numeroDeCaracteres = caracterEspecial(meuTexto);
+console.log(`Número de caracteres especiais: ${numeroDeCaracteres}`)
+
+// Exercicio 26
+// Notas
+function mediaNota(p1 = 0, p2 = 0, p3 = 0, p4 = 0) {
+  let media = (p1 + p2 + p3 + p4) / 4;
+  if (media >= 7) {
+    return "Aprovado";
+  } else if (media >= 5 && media < 7) {
+    return "Recuperação";
+  } else {
+    return "Reprovado";
+  }
+}
+console.log(mediaNota(5, 10, 8, 5));
