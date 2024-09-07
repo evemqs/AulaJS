@@ -35,198 +35,55 @@ let dec = 1
 dec --
 console.log("Decremento de 0 - 1: ", dec)
 
+// For, While, Do While
 
-// Exercicio 1
-function aritmetica (number1, number2, number3) {
-  let atm = number1 + number2 + number3 / 3
-  console.log("Aritmética de 5, 7 e 10: ", atm)
-}
-aritmetica(5, 7, 10)
-
-// Exercicio 2
-function retangulo (b, h) {
-  let area = b * h
-  console.log("A área do retângulo é: ", area)
-}
-retangulo(10, 25)
-
-// Exercicio 3
-function incrementoDecremento (number) {
-  let incr = number++
-  let decr = number--
-  console.log("O incremento do número 10 é: ", incr, "e o decremento é: ", decr)
-}
-incrementoDecremento(10)
-
-// Exercicio 4
-function restoDivisao (n1, n2) {
-  let result = n1 % n2
-  console.log("Resto da divisão de 8 por 16: ", result)
-}
-restoDivisao(8, 16)
-
-// Exercicio 5
-function temperatura (f) {
-  let c = (f - 32) * (5/9)
-  console.log("A temperatura em Celsius para Fahrenheit fica: ", c)
-}
-temperatura(32)
-
-// Exercicio 6
-function dobroMetade (number) {
-  let dobro = number * 2
-  let metade = number / 2
-  console.log("Dobro de 27: ", dobro, "Metade de 27: ", metade)
-}
-dobroMetade(27)
-
-// Exercicio 7
-function elevado (number1, number2) {
-  let exp = number1**number2
-  console.log("52 elevado a 94 é igual a: ", exp)
-}
-elevado(9, 3)
-
-// Exercicio 8
-function negativoOuPositivo (number) {
-  if (number >= 1) {
-    console.log('Esse número é positivo.')
-  } else if (number < 0) {
-    console.log('Esse número é negativo.')
-  } else {
-    console.log('O número é zero.')
-  }
-}
-negativoOuPositivo(5)
-
-// Exercicio 9
-function parOuImpar (number) {
-  if (number %2 == 0) {
-    console.log('Esse número é par.')
-  }
-  else {
-    console.log('Esse número é ímpar.')
-  }
-}
-parOuImpar(24)
-
-// Exercicio 10
-function classIdade (number) {
-  if (number <= 12) {
-    console.log('É uma criança.')
-  }
-  else if (number <= 17) {
-    console.log('É um adolescente.')
-  }
-  else if (number <= 64) {
-    console.log('É um adulto.')
-  }
-  else {
-    console.log('É um idoso.')
-  }
-}
-classIdade(65)
-
-// Exercicio 11
-function classNota (number) {
-  if (number <= 20) {
-    console.log('Nota F')
-  }
-  else if (number <= 40) {
-    console.log('Nota D')
-  }
-  else if (number <= 60) {
-    console.log('Nota C')
-  }
-  else if (number <= 80) {
-    console.log('Nota B')
-  }
-  else {
-    console.log('Nota A')
-  }
-}
-classNota(85)
-
-// Exercicio 12
-function diaDaSemana (number) {
-  if (number == 1) {
-    console.log('Segunda')
-  }
-  else if (number == 2) {
-    console.log('Terça')
-  }
-  else if (number == 3) {
-    console.log('Quarta')
-  }
-  else if (number == 4) {
-    console.log('Quinta')
-  }
-  else if (number == 5) {
-    console.log('Sexta')
-  }
-  else if (number == 6) {
-    console.log('Sábado')
-  }
-  else {
-    console.log('Domingo')
-  }
-}
-diaDaSemana(5)
-
-// Exercicio 13
-function bonusVendedor (faturamento) {
-  let bonus = 0;
-  if (faturamento < 1000) {
-    bonus = faturamento * 0;
-    console.log('Bônus igual a: ', bonus)
-  }
-  else if (faturamento >= 1000 && faturamento <= 5000) {
-    bonus = faturamento * 0.05
-    console.log('Bônus igual a: ', bonus)
-  }
-  else {
-    bonus = faturamento * 0.1
-    console.log('Bônus igual a: ', bonus)
-  }
-}
-bonusVendedor(2000)
-
-// Aula 3
-
+// Começo
 for (i = 10; i <= 20; i++) {
   console.log("Número " + i)
 }
+// Fim
 
+// Começo
 let e = 0;
 while (e <= 5) {
   console.log("O número é " + e);
   e++
 }
+// Fim
 
+// Começo
 let a = 0;
 do {
   console.log("The number is " + a)
   a++;
 }
 while (a <= 5);
+// Fim
 
+// Começo
 let palavras = ["Figma", "Palavra", "JavaScript"]
 for (let o of palavras) {
   console.log(o)
 }
+// Fim
 
+// Começo
 for (u = 1; u <= 10; u++) {
   let soma = u + 2;
   let resSoma = u+' + 2 = ' + soma;
   console.log(resSoma)
 }
+// Fim
 
+// Começo
 for (u = 1; u <= 10; u++) {
   let multi = u * 2;
   let resMulti = u+' * 2 = ' + multi;
   console.log(resMulti)
 }
+// Fim
 
+// Começo
 for (k = 10; k < 20; k++) {
   if(k == 15) {
     console.log("Cabo")
@@ -234,7 +91,9 @@ for (k = 10; k < 20; k++) {
   }
   console.log(k)
 }
+// Fim
 
+// Começo
 let txt = "";
 for (r = 0; r < 10; r++) {
   if(r === 3) {
@@ -243,7 +102,9 @@ for (r = 0; r < 10; r++) {
   txt = "O número é " + r;
   console.log(txt)
 }
+// Fim
 
+// Começo
 for (p = 1; p <= 15; p++) {
   if(p % 2 == 0) {
     console.log("O número é par: ", p)
@@ -251,8 +112,11 @@ for (p = 1; p <= 15; p++) {
     console.log("O número é impar: ", p)
   }
 }
+// Fim
 
-// Arrays
+
+// Array
+
 let frutas = ["Maçã", "Banana", "Laranja"]
 console.log(frutas[0])
 
@@ -275,78 +139,10 @@ console.log(frutas)
 // Length
 console.log(frutas.length)
 
-// Exercicio 14
-for(i = 10; i >= 1; i--) {
-    console.log(i)
-}
-console.log("Feliz ano novo!")
-
-// Exercicio 15
-for(e = 1; e <= 20; e++) {
-    if (e %2 == 0) {
-        let number = e + e
-        console.log(`${e} + ${e} = ${number}`)
-    }
-}
-
-// Exercicio 16
-function tabuada(numero) {
-  console.log(`Tabuada de ${numero}:`);
-  for (let i = 1; i <= 10; i++) {
-    console.log(`${numero} x ${i} = ${numero * i}`);
-  }
-}
-tabuada(7);
-
-// Exercicio 17
-function contarVogais(str) {
-  str = str.toLowerCase();
-  const vogais = "aeiou";
-  let contador = 0;
-  for (let char of str) {
-    if (vogais.includes(char)) {
-      contador++;
-    }
-  }
-  return contador;
-}
-const minhaString = "Contar o número de vogais";
-const numeroDeVogais = contarVogais(minhaString);
-console.log(`O número de vogais na string é: ${numeroDeVogais}`);
-
-// Exercicio 18
-function exibirImpares() {
-  let numero = 1
-  while (numero <= 20) {
-    console.log(numero)
-    numero += 2
-  }
-}
-exibirImpares();
-
-// Exercicio 19
-function somarDigitos(numero) {
-  const strNumero = numero.toString()
-  let soma = 0
-  for (let char of strNumero) {
-    soma += parseInt(char, 10)
-  }
-  return soma;
-}
-const numero = 1234;
-const resultado = somarDigitos(numero);
-console.log(`A soma dos dígitos de ${numero} é: ${resultado}`);
-
-// Exercicio 20
-let objeto = {
-  nome: "João",
-  idade: 30,
-  cidade: "São Paulo",
-}
-console.log(objeto)
 
 // Functions
 
+// Começo
 function adivinharNumero (n) {
   let text = ``
   if (n == 10 || n == 15 || n == 20) {
@@ -357,8 +153,9 @@ function adivinharNumero (n) {
   return text
 }
 adivinharNumero(15)
+// Fim
 
-
+// Começo
 function getSizes (alt, lar, com) {
   let area = alt * lar
   let volume = alt * lar * com
@@ -366,8 +163,9 @@ function getSizes (alt, lar, com) {
   return sizes
 }
 console.log(getSizes(5, 6 ,7))
+// Fim
 
-
+// Começo
 function somando (numero) {
   for (u = 1; u <= 10; u++) {
     let soma = u + numero;
@@ -375,8 +173,9 @@ function somando (numero) {
   }
 }
 somando(3)
+// Fim
 
-
+// Começo
 function multiplicando (numero) {
   for (u = 1; u <= 10; u++) {
     let multi = u * numero;
@@ -384,8 +183,9 @@ function multiplicando (numero) {
   }
 }
 multiplicando(3)
+// Fim
 
-
+// Começo
 function pula(n) {
   let txt = "";
   for (r = 0; r <= 10; r++) {
@@ -397,8 +197,9 @@ function pula(n) {
   }
 }
 pula(5)
+// Fim
 
-
+// Começo
 function calcularSoma(numeros) {
   let soma = 0;
 
@@ -409,9 +210,10 @@ function calcularSoma(numeros) {
 }
 let numeros = [1, 2, 3, 4];
 calcularSoma(numeros);
+// Fim
 
 
-// Aula 4
+// Encapsulamento
 
 let pessoa = {
   nome: "Carlos",
@@ -433,104 +235,147 @@ outraPessoa.saudacao()
 console.log(pessoa)
 console.log(outraPessoa)
 
-// Exercicio 21
-let nomes = ["Numanice", "Laryssa", "Herbert", "Normani"]
-nomes.push("Everlyn")
-nomes.shift()
-console.log("Tamanho do array:", nomes.length)
-nomes = nomes.map(nome => nome.toUpperCase())
-console.log("Nomes finais:", nomes)
 
-// Exercicio 22
-let carro = {
-  marca: 'Toyota',
-  modelo: 'Corolla',
-  ano: 2020
-}
-carro.cor = 'Azul';
-delete carro.ano;
-console.log('Marca:', carro.marca);
-console.log('Modelo:', carro.modelo);
+// Herança
 
-// Exercicio 23
-// Função calculadora básica
-function userNumber() {
-  const num1 = parseFloat(prompt("Digite o primeiro número: "));
-  const num2 = parseFloat(prompt("Digite o segundo número: "));
-  const operation = prompt("Escolha a operação desejada (+, -, /, *): ");
+// Começo
+class ContaBancaria {
+  #saldo;
 
-  function calcBasic(num1, num2, operation) {
-    let res
-    if (operation === "+") {
-      res = num1 + num2;
-      console.log(`${num1} + ${num2} = ${res}`);
-    }
-    else if (operation === "-") {
-      res = num1 - num2;
-      console.log(`${num1} - ${num2} = ${res}`);
-    }
-    else if (operation === "*") {
-      res = num1 * num2;
-      console.log(`${num1} * ${num2} = ${res}`);
-    }
-    else {
-      res = num1 / num2;
-      console.log(`${num1} / ${num2} = ${res}`);
-    }
+  constructor(saldoInicial) {
+    this.#saldo = saldoInicial;
   }
-  calcBasic(num1, num2, operation);
-}
-userNumber();
 
-// Exercicio 24
-// Número primo
-const num = parseInt(prompt("Digite um número: "))
-function primo(num) {
-  if (num <= 1) {
-    console.log("Não é primo");
-    return;
+  depositar(valor) {
+    this.#saldo += valor;
   }
-  if (num === 2) {
-    console.log("É primo");
-    return;
+
+  getSaldo() {
+    return this.#saldo;
   }
-  for (let i = 2; i < num; i++) {
-    if (num % i === 0) {
-      console.log("Não é primo");
-      return;
+
+  set saldo(novoSaldo) {
+    if (novoSaldo < 0) {
+      console.log(`O saldo não pode ser negativo.`);
+    } else {
+      this.#saldo = novoSaldo;
     }
-  }
-  console.log("É primo");
-}
-primo(num);
-
-// Exercicio 25
-// Caracteres especiais
-function caracterEspecial(texto) {
-  texto = prompt("Digite uma string: ");
-  const cctr = "{[@#$%&]}";
-  let contador = 0;
-  for (let char of texto) {
-    if (cctr.includes(char)) {
-      contador++;
-    }
-  }
-  return contador;
-}
-const meuTexto = "Contar o número de caracteres";
-const numeroDeCaracteres = caracterEspecial(meuTexto);
-console.log(`Número de caracteres especiais: ${numeroDeCaracteres}`)
-
-// Exercicio 26
-// Notas
-function mediaNota(p1 = 0, p2 = 0, p3 = 0, p4 = 0) {
-  let media = (p1 + p2 + p3 + p4) / 4;
-  if (media >= 7) {
-    return "Aprovado";
-  } else if (media >= 5 && media < 7) {
-    return "Recuperação";
-  } else {
-    return "Reprovado";
   }
 }
-console.log(mediaNota(5, 10, 8, 5));
+
+const minhaConta = new ContaBancaria(1000);
+minhaConta.depositar(500);
+console.log(minhaConta.getSaldo());
+
+minhaConta.saldo = 2000;
+console.log(minhaConta.getSaldo());
+
+minhaConta.saldo = -500;
+console.log(minhaConta.getSaldo());
+// Fim
+
+// Começo
+class Carro {
+  #marca;
+  #modelo;
+  #ano;
+
+  constructor(marca, modelo, ano) {
+    this.#marca = marca;
+    this.#modelo = modelo;
+    this.#ano = ano;
+  }
+
+  getAno() {
+    return this.#ano;
+  }
+
+  set ano(ano) {
+    if (ano < this.#ano) {
+      console.log(`O carro ta ultrapassado.`)
+    } else {
+      this.#ano = ano;
+    }
+  }
+}
+
+const meuCarro = new Carro(`Jeep`, `Compass`, 2022);
+console.log(meuCarro);
+meuCarro.ano = 2028;
+console.log(meuCarro.getAno())
+// Fim
+
+// Começo
+class Animal {
+  constructor(nome, idade, especie) {
+    this.nome = nome;
+    this.idade = idade;
+    this.especie = especie;
+  }
+
+  falar() {
+    console.log(`${this.nome} faz um som.`);
+  }
+
+  dormir() {
+    console.log(`${this.nome} está dormindo.`);
+  }
+
+  info() {
+    console.log(`Nome: ${this.nome}, Idade: ${this.idade}, Espécie: ${this.especie}`);
+  }
+}
+
+class Cachorro extends Animal {
+  constructor(nome, idade, raca) {
+    super(nome, idade, `Cachorro`);
+    this.raca = raca;
+  }
+
+  falar() {
+    console.log(`${this.nome} late.`);
+  }
+
+  buscarBola() {
+    console.log(`${this.nome} está buscando bola.`);
+  }
+
+  info() {
+    super.info();
+    console.log(`Raça: ${this.raca}`);
+  }
+}
+
+class Gato extends Animal {
+  constructor(nome, idade, raca) {
+    super(nome, idade, `Gato`);
+    this.raca = raca;
+  }
+
+  falar() {
+    console.log(`${this.nome} mia.`);
+  }
+
+  cacarRato() {
+    console.log(`${this.nome} está caçando rato.`);
+  }
+
+  info() {
+    super.info();
+    console.log(`Raça: ${this.raca}`);
+  }
+}
+
+const meuCachorro = new Cachorro(`Meg`, 10, `Vira Lata`);
+const meuGato = new Gato(`Zoe`, 4, `Vira Lata`)
+
+meuCachorro.falar();
+meuCachorro.dormir();
+meuCachorro.buscarBola();
+meuCachorro.info();
+
+meuGato.falar();
+meuGato.dormir();
+meuGato.cacarRato();
+meuGato.info();
+// Fim
