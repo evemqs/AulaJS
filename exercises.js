@@ -324,3 +324,69 @@ function mediaNota(p1 = 0, p2 = 0, p3 = 0, p4 = 0) {
   }
 }
 console.log(mediaNota(5, 10, 8, 5));
+
+//Exercicio 27
+// Desafio 06/09
+class Funcionario {
+  #nome;
+  #cargo;
+  #atividades;
+
+  constructor(nome, cargo) {
+      this.#nome = nome;
+      this.#cargo = cargo;
+      this.#atividades = [];
+  }
+
+  getNome() {
+      return this.#nome;
+  }
+
+  getCargo() {
+      return this.#cargo;
+  }
+
+  adicionarAtividade(atividade) {
+      this.#atividades.push(atividade);
+  }
+
+  listarAtividades() {
+      return this.#atividades;
+  }
+}
+
+class Engenheiro extends Funcionario {
+  constructor(nome) {
+      super(nome, 'Engenheiro');
+  }
+
+  realizarAtividade() {
+      console.log(`${this.getNome()} está desenvolvendo software.`);
+  }
+}
+
+class Designer extends Funcionario {
+  constructor(nome) {
+      super(nome, 'Designer');
+  }
+
+  realizarAtividade() {
+      console.log(`${this.getNome()} está criando um design gráfico.`);
+  }
+}
+
+function gerenciarFuncionarios() {
+  const engenheiro1 = new Engenheiro('Normani');
+  const designer1 = new Designer('Numanice');
+
+  engenheiro1.adicionarAtividade('Desenvolvimento de API');
+  designer1.adicionarAtividade('Criação de logotipo');
+
+  console.log(`${engenheiro1.getNome()} - Atividades: ${engenheiro1.listarAtividades().join(', ')}`);
+  console.log(`${designer1.getNome()} - Atividades: ${designer1.listarAtividades().join(', ')}`);
+
+  engenheiro1.realizarAtividade();
+  designer1.realizarAtividade();
+}
+
+gerenciarFuncionarios();
